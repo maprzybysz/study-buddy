@@ -15,17 +15,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json}": [
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "browserslist": {
     "production": [
@@ -43,7 +39,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   }

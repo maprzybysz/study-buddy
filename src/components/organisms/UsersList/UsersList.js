@@ -3,7 +3,6 @@ import { users as usersData } from 'data/data';
 import UsersListItem from 'components/molecules/UserListItem/UserListItem';
 import { Wrapper, StyledList } from './UserList.styles';
 
-
 const UsersList = () => {
   const [users, setUsers] = useState([]);
   const [isLoading, setLoadingState] = useState([]);
@@ -46,6 +45,5 @@ const UsersList = () => {
     </Wrapper>
   );
 };
-
 
 export default UsersList;

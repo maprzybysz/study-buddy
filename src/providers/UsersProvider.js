@@ -14,7 +14,7 @@ const UsersProvider = ({ children }) => {
     axios
       .get('/students')
       .then(({ data }) => setUsers(data.students))
-      .catch((err) => console.log.log(err));
+      .catch((err) => console.log(err));
   }, []);
 
   const deleteUser = (name) => {

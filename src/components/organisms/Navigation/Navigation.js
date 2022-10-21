@@ -12,7 +12,9 @@ const Navigation = () => {
         </h1>
       </Logo>
       <StyledLink to="/group">Dashboard</StyledLink>
-      <StyledLink to="/add-user">Add user</StyledLink>
+      <StyledLink as="a" onClick={() => localStorage.removeItem('token')}>
+        Login
+      </StyledLink>
     </Wrapper>
   );
 };
